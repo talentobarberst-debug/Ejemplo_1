@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>| Inicio</title>
+    
+</head>
+<body>
+    <h1>Hola, esta es a pagina web de la barberia</h1>
+    <br><br><br>
+    <h3>Estoy a punto de cambiar el mundo</h3>
+    <br>
+                <?php if (file_exists('public/vid/intro.mp4')): ?>
+                <p>Aquí tienes un video para que aprendas PHP desde cero:</p>
+                <div class="intro-video-container">
+                    <video controls>
+                        <source src="public/vid/intro.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
+            <?php endif; ?>
+</body>
+</html>
